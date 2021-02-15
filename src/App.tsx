@@ -63,7 +63,7 @@ function App() {
           Með{" "}
           <a
             css={{ color: "#286efa" }}
-            href="https://reactjs.org"
+            href="https://www.figma.com/file/T2gUX5ED55cN2YPXvJQ4zM/DSGN-86---H%C3%B6nnun-fyrir-atvinnuvi%C3%B0tal?node-id=30%3A5"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -98,8 +98,8 @@ function App() {
           <li>Hægt að smella á hlutinn.</li>
           <ul>
             <li>
-              Við það opnast side panel þar sem hægt er að sjá nánari
-              upplýsingar um hlutinn og breyta eigindum hlutarins.
+              Við það opnast modal þar sem hægt er að sjá nánari upplýsingar um
+              hlutinn og breyta eigindum hlutarins.
             </li>
           </ul>
           <li>Hægt að eyða hlut úr listanum.</li>
