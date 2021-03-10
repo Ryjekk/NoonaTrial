@@ -52,24 +52,24 @@ function App() {
             }}
             alt="logo"
           />
-          <h1 css={{ textAlign: "center" }}>Velkomin!</h1>
+          <h1 css={{ textAlign: "center" }}>Welcome!</h1>
           <p>
-            Við erum ekkert eðlilega spennt fyrir því að sjá þig láta ljós þitt
-            skína. Takk kærlega fyrir að gefa þér tíma og leyfa okkur að fá
-            innsýn í hvernig þú skrifar kóða.
+            We are truly excited to see you express your talent. Thank you so
+            much for taking the time and to allow us a glimpse at your coding
+            process.
           </p>
         </header>
         <p>
-          Með{" "}
+          With{" "}
           <a
             css={{ color: "#286efa" }}
             href="https://www.figma.com/file/T2gUX5ED55cN2YPXvJQ4zM/DSGN-86---H%C3%B6nnun-fyrir-atvinnuvi%C3%B0tal?node-id=30%3A5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            hönnun til hliðsjónar
-          </a>
-          , útfærðu viðmót tengt lista sem uppfyllir eftirfarandi:
+            this design
+          </a>{" "}
+          as your guide, implement an interface that satisfies the following:
         </p>
         <ol
           css={{
@@ -78,35 +78,32 @@ function App() {
           }}
         >
           <li>
-            Viðmót sem gefur til kynna að listi sé tómur, ásamt takka sem leyfir
-            notanda að bæta við hlut í listann.
+            A view that implies that a list is empty, along with a button that
+            provides users the ability to add an item to the list.
           </li>
-          <li>Hægt að bæta við nýjum hlut í listann.</li>
+          <li>Adding an item to the list is possible.</li>
 
           <ul>
-            <li>Ef heildarfjöldi hluta fer yfir 10, þá;</li>
+            <li>If the number of items in the list surpasses 10;</li>
 
             <ul>
-              <li>Birtist villuviðmót í staðinn fyrir listann.</li>
-              <li>
-                Birtist takki sem leyfir notanda að eyða öllum hlutum í
-                listanum.
-              </li>
+              <li>The list is replaced with an error interface.</li>
+              <li>A button allows the user to clear the list.</li>
             </ul>
           </ul>
 
-          <li>Hægt að smella á hlutinn.</li>
+          <li>List items are clickable</li>
           <ul>
             <li>
-              Við það opnast modal þar sem hægt er að sjá nánari upplýsingar um
-              hlutinn og breyta eigindum hlutarins.
+              When clicking an item, a modal appears displaying further info
+              regarding the item and allows the user to edit it.
             </li>
           </ul>
-          <li>Hægt að eyða hlut úr listanum.</li>
+          <li>List items can be deleted.</li>
         </ol>
         <p>
-          Þú mátt gjarnan opna <code>src/Solution.tsx</code> og skrifa lausnina
-          þína þar.
+          Please open <code>src/Solution.tsx</code> and use it as a starting
+          point for your code.
         </p>
       </div>
     </div>
