@@ -1,3 +1,3 @@
 # Welcome to the Noona candidate trial project
 
-Please fork this repo to get started
+Clone this repo to get started. When you are finished, please email us your solution.
