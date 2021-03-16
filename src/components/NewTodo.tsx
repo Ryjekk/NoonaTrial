@@ -36,7 +36,7 @@ const NewTodo: React.FC<NewTodoProps> = ({ addTodo, show }) => {
                 variant="contained"
                 color="primary"
                 onClick={handleOpen}
-                style={{backgroundColor: `#286EFA`}}
+                style={{backgroundColor: `#286EFA`, borderRadius: '50px'}}
             >
                 Add Item
             </Button>

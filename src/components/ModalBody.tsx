@@ -7,8 +7,6 @@ import { colorMark } from "../utils/colorMark";
 import { ButtonBox, ModalStyle } from "../ui/ModalStyle";
 import { Button, MenuItem, TextField, Typography } from "@material-ui/core";
 
-
-
 const ModalBody: React.FC<NewTodoProps> = forwardRef(({ addTodo, handleClose }, ref) => {
     const colorRef =  useRef<HTMLInputElement>(null);
     const textRef =  useRef<HTMLInputElement>(null);
@@ -62,6 +60,7 @@ const ModalBody: React.FC<NewTodoProps> = forwardRef(({ addTodo, handleClose }, 
                     <Button
                         variant="outlined"
                         onClick={handleClose}
+                        style={{borderRadius: '50px'}}
                     >
                         Cancel
                     </Button>
@@ -69,7 +68,11 @@ const ModalBody: React.FC<NewTodoProps> = forwardRef(({ addTodo, handleClose }, 
                         variant="contained"
                         color="primary"
                         type='submit'
-                        style={{backgroundColor: `#286EFA`}}
+                        style={{
+                            backgroundColor: `#286EFA`,
+                            borderRadius: '50px',
+                            width: '91px'
+                        }}
                     >
                         Save
                     </Button>

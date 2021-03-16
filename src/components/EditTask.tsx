@@ -69,6 +69,7 @@ const EditTask: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}
                         <Button
                             variant="outlined"
                             onClick={toggle}
+                            style={{borderRadius: '50px'}}
                         >
                             Cancel
                         </Button>
@@ -76,7 +77,11 @@ const EditTask: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}
                             variant="contained"
                             color="primary"
                             type='submit'
-                            style={{backgroundColor: `#286EFA`}}
+                            style={{
+                                backgroundColor: `#286EFA`,
+                                borderRadius: '50px',
+                                width: '91px'
+                            }}
                         >
                             Save
                         </Button>
