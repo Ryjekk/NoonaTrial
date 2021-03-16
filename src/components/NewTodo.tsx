@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 // Style
 import {Modal, Button, Typography} from '@material-ui/core';
 import { CTABox } from "../ui/CTABoxStyle";

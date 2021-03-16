@@ -1,14 +1,12 @@
 import React from 'react';
-// Components
-import EditTodo from "./EditTodo";
 // Interface
 import { TodoListProps } from "../Interface/todo.model";
 // Styles
 import { IconButton } from '@material-ui/core';
 import DeleteIcon from '@material-ui/icons/Delete';
-import {LiElement, UlElement} from "../ui/ListStyle";
+import { LiElement, UlElement } from "../ui/ListStyle";
 
-const TodoList: React.FC<TodoListProps> = ({items, todoToEdit, deleteTodo, editTodo}) => {
+const TodoList: React.FC<TodoListProps> = ({items, deleteTodo, editTodo}) => {
     return (
         <UlElement>
             {items.map(item =>
@@ -27,7 +25,6 @@ const TodoList: React.FC<TodoListProps> = ({items, todoToEdit, deleteTodo, editT
                     </IconButton>
                 </LiElement>
             )}
-            {/*<EditTodo />*/}
         </UlElement>
     );
 };

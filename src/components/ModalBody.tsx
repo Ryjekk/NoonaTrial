@@ -15,7 +15,6 @@ const ModalBody: React.FC<NewTodoProps> = React.forwardRef(({addTodo, handleClos
         setColor(event.target.value);
     };
 
-
     const todoSubmitHandler = (event: React.FormEvent) => {
         event.preventDefault();
         const inputData = {

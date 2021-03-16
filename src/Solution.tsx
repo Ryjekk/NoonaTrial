@@ -1,17 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 // Components
 import TodoList from "./components/TodoList";
 import NewTodo from "./components/NewTodo";
 import ErrorComponent from "./components/ErrorComponent";
 // Style
 import { MainWrapper } from "./ui/WrapperStyle";
-import {Modal, Typography} from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 // Interfaces
-import {Todo} from "./Interface/todo.model";
+import { Todo } from "./Interface/todo.model";
 
 const Solution: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
-    const [todoToEdit, selectTodo] = useState({})
+    const [todoToEdit, selectTodo] = useState({});
 
     const todoAddHandler = (todo: Todo) => {
         setTodos(prevState => [...prevState, todo]);
@@ -33,7 +33,6 @@ const Solution: React.FC = () => {
         })
     };
 
-
     return (
         <MainWrapper>
             <Typography variant='h4'>The List</Typography>
@@ -51,7 +50,6 @@ const Solution: React.FC = () => {
                     />
                   </>
             }
-
         </MainWrapper>
     );
 };
