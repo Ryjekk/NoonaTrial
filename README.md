@@ -8,8 +8,6 @@
 
 ## Available Scripts
 
-To install locally follow the directions in the MongoDB documentation.
-
 `npm install`
 
 To run server
