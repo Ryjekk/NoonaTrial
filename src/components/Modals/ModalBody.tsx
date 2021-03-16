@@ -1,10 +1,10 @@
 import React, { useRef, useState, forwardRef } from 'react';
 // Interface
-import { NewTodoProps } from "../Interface/todo.model";
+import { NewTodoProps } from "../../Interface/todo.model";
 // Data
-import { colorMark } from "../utils/colorMark";
+import { colorMark } from "../../utils/colorMark";
 // Style
-import { ButtonBox, ModalStyle } from "../ui/ModalStyle";
+import { ButtonBox, ModalStyle } from "../../ui/ModalStyle";
 import { Button, MenuItem, TextField, Typography } from "@material-ui/core";
 
 const ModalBody: React.FC<NewTodoProps> = forwardRef(({ addTodo, handleClose }, ref) => {

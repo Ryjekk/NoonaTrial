@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 // Interface
-import { EditModalProps } from '../Interface/todo.model';
+import { EditModalProps } from '../../Interface/todo.model';
 // Data
-import { colorMark } from "../utils/colorMark";
+import { colorMark } from "../../utils/colorMark";
 // Style
-import {Button, Modal, MenuItem, TextField, Typography} from "@material-ui/core";
-import { ButtonBox, ModalStyle } from "../ui/ModalStyle";
+import { Button, Modal, MenuItem, TextField, Typography } from "@material-ui/core";
+import { ButtonBox, ModalStyle } from "../../ui/ModalStyle";
 
-const EditTask: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}) => {
+const EditModalBody: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}) => {
     const [taskName, setTaskName] = useState<string | undefined>('');
     const [color, setColor] = useState<string | undefined>('');
 
@@ -92,4 +92,4 @@ const EditTask: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}
     );
 };
 
-export default EditTask;
+export default EditModalBody;

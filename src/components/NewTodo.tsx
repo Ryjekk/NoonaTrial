@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Component
-import ModalBody from "./ModalBody";
+import ModalBody from "./Modals/ModalBody";
 // Interface
 import { NewTodoProps } from "../Interface/todo.model";
 // Style

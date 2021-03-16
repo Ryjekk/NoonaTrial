@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // Components
-import EditTask from "./EditTask";
+import EditModalBody from "./Modals/EditModalBody"
 // Interface
 import { TodoListProps, EditTodo } from "../Interface/todo.model";
 // Styles
@@ -42,7 +42,7 @@ const TodoList: React.FC<TodoListProps> = ({ items, deleteTodo, updateList }) =>
                     </IconButton>
                 </LiWrap>
             )}
-            <EditTask
+            <EditModalBody
                 modal={modal}
                 toggle={toggle}
                 todoObj={itemToEdit}
