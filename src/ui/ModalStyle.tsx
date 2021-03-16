@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const ModalStyle = styled('div')`
   background-color: #eee;
-  width: 255px;
+  width: 300px;
   min-height: 234px;
   border-radius: 10px;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  padding: 24px;
+  padding: 24px 36px;
   
   form {
    display: flex;

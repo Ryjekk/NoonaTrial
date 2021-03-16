@@ -1,10 +1,21 @@
 import styled from "styled-components";
 
+export const LiWrap = styled('div')`
+  display: flex;
+  position: relative;
+  
+  button {
+    position: absolute;
+    right: 0;
+  }
+`;
+
 export const LiElement = styled('li')`
   display: flex;
   border-bottom: 1px solid #bcbcbc;
   justify-content: space-between;
   cursor: pointer;
+  width: 100%;
   
   p {
     padding-left: 12px;

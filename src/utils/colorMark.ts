@@ -7,4 +7,4 @@ export const colorMark = [
         value: 'Blue',
         label: 'Blue'
     }
-]
+];

@@ -3,15 +3,15 @@ import React, { useState } from 'react';
 import TodoList from "./components/TodoList";
 import NewTodo from "./components/NewTodo";
 import ErrorComponent from "./components/ErrorComponent";
+// Interfaces
+import { Todo, EditTodo } from "./Interface/todo.model";
 // Style
 import { MainWrapper } from "./ui/WrapperStyle";
 import { Typography } from "@material-ui/core";
-// Interfaces
-import { Todo } from "./Interface/todo.model";
+
 
 const Solution: React.FC = () => {
     const [todos, setTodos] = useState<Todo[]>([]);
-    const [todoToEdit, selectTodo] = useState({});
 
     const todoAddHandler = (todo: Todo) => {
         setTodos(prevState => [...prevState, todo]);
@@ -27,10 +27,11 @@ const Solution: React.FC = () => {
         setTodos([]);
     };
 
-    const editTodoHandler = (todoId: string) => {
-        selectTodo(pervState => {
-            return todos.find(todo => todo.id === todoId)
-        })
+    const editTodoHandler = (obj: EditTodo) => {
+        let tempList = todos;
+        const idx = tempList.findIndex(todo => todo.id === obj.id);
+        tempList[idx] = obj as Todo
+        setTodos(tempList)
     };
 
     return (
@@ -42,7 +43,7 @@ const Solution: React.FC = () => {
                     <TodoList
                         items={todos}
                         deleteTodo={todoDeleteHandler}
-                        editTodo={editTodoHandler}
+                        updateList={editTodoHandler}
                     />
                     <NewTodo
                         addTodo={todoAddHandler}

@@ -1,15 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState, forwardRef } from 'react';
+// Interface
+import { NewTodoProps } from "../Interface/todo.model";
+// Data
+import { colorMark } from "../utils/colorMark";
 // Style
 import { ButtonBox, ModalStyle } from "../ui/ModalStyle";
 import { Button, MenuItem, TextField, Typography } from "@material-ui/core";
-import { colorMark } from "../utils/colorMark";
-// Interface
-import { NewTodoProps } from "../Interface/todo.model";
 
-const ModalBody: React.FC<NewTodoProps> = React.forwardRef(({addTodo, handleClose}, ref) => {
+
+
+const ModalBody: React.FC<NewTodoProps> = forwardRef(({ addTodo, handleClose }, ref) => {
     const colorRef =  useRef<HTMLInputElement>(null);
     const textRef =  useRef<HTMLInputElement>(null);
-    const [color, setColor] = React.useState('Black');
+    const [color, setColor] = useState<string>('Black');
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setColor(event.target.value);
@@ -58,7 +61,9 @@ const ModalBody: React.FC<NewTodoProps> = React.forwardRef(({addTodo, handleClos
                     <Button
                         variant="outlined"
                         onClick={handleClose}
-                    >Cancel</Button>
+                    >
+                        Cancel
+                    </Button>
                     <Button
                         variant="contained"
                         color="primary"

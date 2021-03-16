@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-// Style
-import {Modal, Button, Typography} from '@material-ui/core';
-import { CTABox } from "../ui/CTABoxStyle";
-import {HeaderWrapper} from "../ui/WrapperStyle";
+// Component
+import ModalBody from "./ModalBody";
 // Interface
 import { NewTodoProps } from "../Interface/todo.model";
-// Utils
-import ModalBody from "./ModalBody";
+// Style
+import { Modal, Button, Typography } from '@material-ui/core';
+import { CTABox } from "../ui/CTABoxStyle";
+import { HeaderWrapper } from "../ui/WrapperStyle";
 
-
-const NewTodo: React.FC<NewTodoProps> = ({addTodo, show}) => {
+const NewTodo: React.FC<NewTodoProps> = ({ addTodo, show }) => {
     const [open, setOpen] = useState(false);
 
     const handleOpen = () => {

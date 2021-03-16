@@ -1,12 +1,12 @@
 import React from 'react';
-// Style
-import {Button, Typography} from "@material-ui/core";
-import {HeaderWrapper} from "../ui/WrapperStyle";
-import {CTABox} from "../ui/CTABoxStyle";
 // Interface
-import {TodoListDeleteAllProps} from "../Interface/todo.model";
+import { TodoListDeleteAllProps } from "../Interface/todo.model";
+// Style
+import { Button, Typography } from "@material-ui/core";
+import { HeaderWrapper } from "../ui/WrapperStyle";
+import { CTABox } from "../ui/CTABoxStyle";
 
-const ErrorComponent: React.FC<TodoListDeleteAllProps> = ({deleteAll}) => {
+const ErrorComponent: React.FC<TodoListDeleteAllProps> = ({ deleteAll }) => {
     return (
         <>
             <HeaderWrapper>
