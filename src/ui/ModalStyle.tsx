@@ -11,6 +11,10 @@ export const ModalStyle = styled('div')`
   transform: translate(-50%,-50%);
   padding: 24px 36px;
   
+  &:focus {
+    outline: none;
+  }
+  
   form {
    display: flex;
    flex-direction: column;

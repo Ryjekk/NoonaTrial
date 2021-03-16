@@ -44,6 +44,7 @@ const EditTask: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}
                 </Typography>
                 <form onSubmit={handleUpdate}>
                     <TextField
+                        style={{paddingBottom: '15px'}}
                         name={'taskName'}
                         label="Name"
                         required
@@ -52,7 +53,7 @@ const EditTask: React.FC<EditModalProps> = ({modal, toggle, todoObj, updateTodo}
                         onChange={handleChange}
                     />
                     <TextField
-                        label=" "
+                        label="Color"
                         select
                         value={color}
                         onChange={handleChange}

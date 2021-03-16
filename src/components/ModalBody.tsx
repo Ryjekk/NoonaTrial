@@ -38,13 +38,14 @@ const ModalBody: React.FC<NewTodoProps> = forwardRef(({ addTodo, handleClose }, 
             </Typography>
             <form onSubmit={todoSubmitHandler}>
                 <TextField
+                    style={{paddingBottom: '15px'}}
                     label="Name"
                     required
                     multiline
                     inputRef={textRef}
                 />
                 <TextField
-                    label=" "
+                    label="Color"
                     select
                     inputRef={colorRef}
                     value={color}

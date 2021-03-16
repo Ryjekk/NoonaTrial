@@ -1,7 +1,7 @@
 export const colorMark = [
     {
         value: 'Black',
-        label: 'Colour'
+        label: 'Black'
     },
     {
         value: 'Blue',
