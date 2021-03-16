@@ -16,46 +16,46 @@ const logoSpin = keyframes`
 function App() {
     return (
     <div
-      // css={{
-      //   position: "absolute",
-      //   top: 0,
-      //   bottom: 0,
-      //   left: 0,
-      //   right: 0,
-      //   display: "flex",
-      //   justifySelf: "center",
-      //   background: "#302b2b",
-      //   color: "white",
-      //   fontSize: "22px",
-      //   padding: "2em",
-      //   alignItems: "center",
-      //   justifyContent: "center",
-      //   overflow: "auto",
-      // }}
+      css={{
+        position: "absolute",
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0,
+        display: "flex",
+        justifySelf: "center",
+        background: "#302b2b",
+        color: "white",
+        fontSize: "22px",
+        padding: "2em",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "auto",
+      }}
     >
       <div
-          // css={{ maxWidth: "30em" }}
+          css={{ maxWidth: "30em" }}
       >
         <header
-          // css={{
-          //   display: "flex",
-          //   flexDirection: "column",
-          //
-          //   color: "white",
-          //   textAlign: "left",
-          // }}
+          css={{
+            display: "flex",
+            flexDirection: "column",
+
+            color: "white",
+            textAlign: "left",
+          }}
         >
           <img
             src={logo}
-            // css={{
-            //   height: "200px",
-            //   pointerEvents: "none",
-            //   animation: `${logoSpin} infinite 20s linear`,
-            // }}
+            css={{
+              height: "200px",
+              pointerEvents: "none",
+              animation: `${logoSpin} infinite 20s linear`,
+            }}
             alt="logo"
           />
           <h1
-              // css={{ textAlign: "center" }}
+              css={{ textAlign: "center" }}
           >Welcome!</h1>
           <p>
             We are truly excited to see you express your talent. Thank you so
@@ -66,7 +66,7 @@ function App() {
         <p>
           With{" "}
           <a
-            // css={{ color: "#286efa" }}
+            css={{ color: "#286efa" }}
             href="https://www.figma.com/file/T2gUX5ED55cN2YPXvJQ4zM/DSGN-86---H%C3%B6nnun-fyrir-atvinnuvi%C3%B0tal?node-id=30%3A5"
             target="_blank"
             rel="noopener noreferrer"
@@ -76,10 +76,10 @@ function App() {
           as your guide, implement an interface that satisfies the following:
         </p>
         <ol
-          // css={{
-          //   li: { margin: "0.5em" },
-          //   ul: { listStyleType: "disc" },
-          // }}
+          css={{
+            li: { margin: "0.5em" },
+            ul: { listStyleType: "disc" },
+          }}
         >
           <li>
             A view that implies that a list is empty, along with a button that
